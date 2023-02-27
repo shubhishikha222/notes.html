@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            background-color:black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            width: 200px;
+            height: 55px;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            bottom: 0;
+            right: 30%;
+            margin-bottom: 10px;
+        }
+        #para1{
+            color:gray;
+            font-size: 25px;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 0;
+            overflow: scroll;
+
+        }
+        #para1::-webkit-scrollbar {
+            display: none;
+        }
+        #heading{
+            color:gray;
+            font-size: 25px;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 0;
+            overflow: scroll;
+
+        }
+        #heading::-webkit-scrollbar {
+            display: none;
+        }
+        #title{
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: none;
+            border-radius: 8px;
+            width: 200px;
+            height: 50px;
+            margin-left: 28%;
+            margin-top: 30px;
+            /* background-color: black;
+            opacity: calc(20%); */
+        }
+        .area{
+            border: none;
+            border-radius: 8px;
+            margin-right: 10px;
+            width: 400px;
+            height: 100px;
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .container{
+            background-image: url("https://source.unsplash.com/500x500/?mountains");
+            display: flexbox;
+            margin: 50px auto;
+            width: 500px;
+            height: 400px;
+            border: 2px solid black;
+            padding-top: 80px;
+            position: relative;
+            border-radius: 16px;
+
+        }
+        .notes{
+            width: auto;
+            height: auto;
+            background-color: white;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <input type="text" id="userInput"></input> -->
+        <input type="text" id="title" placeholder="Add your title"> </input>
+        <textarea name="textarea" class="area" id="userInput" placeholder="Add your note"></textarea>
+        <button class="btn" id="btn">Make a note</button>
+        <div class="notes">
+            <p class="para"></p>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>     
